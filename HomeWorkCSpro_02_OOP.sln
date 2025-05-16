@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkCSpro_02_1_MoneyAndProduct", "HomeWorkCSpro_02_1_MoneyAndProduct\HomeWorkCSpro_02_1_MoneyAndProduct.csproj", "{D989BCEC-FB4C-413C-9DE7-16349706F707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeWorkCSpro_02_2_MusicalInstrument", "HomeWorkCSpro_02_2_MusicalInstrument\HomeWorkCSpro_02_2_MusicalInstrument.csproj", "{5BAC982B-8DAB-493D-A5AC-68AB65ED5D74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D989BCEC-FB4C-413C-9DE7-16349706F707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D989BCEC-FB4C-413C-9DE7-16349706F707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D989BCEC-FB4C-413C-9DE7-16349706F707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BAC982B-8DAB-493D-A5AC-68AB65ED5D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BAC982B-8DAB-493D-A5AC-68AB65ED5D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BAC982B-8DAB-493D-A5AC-68AB65ED5D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BAC982B-8DAB-493D-A5AC-68AB65ED5D74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
