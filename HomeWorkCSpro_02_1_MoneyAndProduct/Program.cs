@@ -18,6 +18,7 @@ namespace HomeWorkCSpro_02_1_MoneyAndProduct
             var moneyTest2 = new Money(2, 350, Currency.UAH);
             moneyTest2.OutputConsole("digits");
             moneyTest2.OutputConsole("str");
+            moneyTest2.OutputConsole("sum");
 
             moneyTest.IncreaseAmount(20, 85);
             moneyTest.OutputConsole();
@@ -38,7 +39,7 @@ namespace HomeWorkCSpro_02_1_MoneyAndProduct
             /*string str = null;
             Product coffee = new Product(str, 100, 00);*///Test exception
 
-            Product coffee = new Product("coffee", 100, 50);
+            Product coffee = new Product("coffee", 100, 5);
             coffee.OutputConsole();
 
             Product bread = new Product("bread", 30, 0, Currency.UAH);

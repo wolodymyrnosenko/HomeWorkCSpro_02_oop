@@ -19,7 +19,6 @@
                     _name = value; 
             }
         }
-        //public Money Price { get; set; }
 
         public Product(string name, int priceWhole, int priceFractional, CurrencyType currency)
             : base(priceWhole, priceFractional, currency)
@@ -34,11 +33,15 @@
             TotalQuantityProducts++;
         }
 
-        public void DecreasePrice(int whole, int fractional)
+        public void DecreasePrice(int whole, int fractional)//Equals inherited method DecreaseAmount
         {
             DecreaseAmount(whole, fractional);
         }
 
+        public void DecreasePrice(int totalFractionals)//Equals inherited method DecreaseAmount
+        {
+            DecreaseAmount(totalFractionals);
+        }
         public override void OutputConsole(string digits = "digits")
         {
             Console.WriteLine($"Всього створено продуктів: {Product.TotalQuantityProducts}");

@@ -63,6 +63,10 @@
         public void DecreaseAmount(int whole, int fractional)
         {
             int totalFractionals = (_wholePart * 100 + _fractionalPart) - (whole * 100 + fractional);
+            DecreaseAmount(totalFractionals);
+        }
+        public void DecreaseAmount(int totalFractionals)
+        {
             WholePart = totalFractionals / 100;
             FractionalPart = totalFractionals % 100;
         }
@@ -70,9 +74,12 @@
         public virtual void OutputConsole(string digits = "sum")
         {
             if (digits == "sum")
+            { 
                 Console.WriteLine($"Сума у {CurrencyTypeMoney.Name}: {_wholePart}{CurrencyTypeMoney.Separator}{_fractionalPart}{CurrencyTypeMoney.Symbol}");
+                Console.WriteLine($"Сума у {CurrencyTypeMoney.Name}: {_wholePart} {CurrencyTypeMoney.AbbreviationWhole} {_fractionalPart} {CurrencyTypeMoney.AbbreviationFractionals}");
+            }
             else if (digits == "digits")
-                Console.WriteLine($"{_wholePart}{CurrencyTypeMoney.Separator}{_fractionalPart}{CurrencyTypeMoney.Symbol}");
+                Console.WriteLine($"{_wholePart}{CurrencyTypeMoney.Separator}{_fractionalPart.ToString().PadLeft(2, '0')}{CurrencyTypeMoney.Symbol}");
             else
                 Console.WriteLine("Необхідно задати параметр виводу на екран: text || digits");
         }
